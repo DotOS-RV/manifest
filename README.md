@@ -1,76 +1,37 @@
+## Getting Started
 
-<p align="center">
-<img src="https://raw.githubusercontent.com/DotOS/resources_drawables/master/dot11/dot_main-banner.png" > 
-</p>
+Before you begin, make sure you are familiar with [Git and Repo](http://source.android.com/source/using-repo.html).
 
-Supported Devices and Downloads :- https://www.droidontime.com/devices
-=========
+### Downloading Source Code
 
------------------------------------------------------------------------------
-
-<p align="center">
-<img src="https://raw.githubusercontent.com/DotOS/resources_drawables/master/dot11/dot5-2-wide.png" > 
-</p>
-
-Downloading Source Code:
-========================
-
-To get started with the building process, you'll need to get familiar with [Git and Repo](http://source.android.com/source/using-repo.html).
-
-To initialize your local repository, use a command like this:
+Clone the source code repository and set up the Android build environment:
 
 ```bash
-repo init -u git://github.com/DotOS/manifest.git -b dot11
+git clone https://github.com/akhilnarang/scripts && cd scripts/setup && bash android_build_env.sh
 ```
 
-Then to sync up:
-================
+Initialize your local repository and sync up:
 
 ```bash
-repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
+repo init -u https://github.com/DotOS-RV/manifest -b dot11
 ```
 
-Compilation of DotOS:
-====================
+### Compilation
 
-From root directory of Project, perform following commands in terminal to start Compilation.
-
+Navigate to the root directory of the project and execute the following commands in the terminal to start the compilation:
 
 ```bash
 source build/envsetup.sh
 lunch dot_<devicecodename>-userdebug
-make bacon
+make bacon -j$(nproc --all)
 ```
------------------------------------------------------------------------------
 
+## Credits
 
-Some Important Links:-
-============
-* [**Website**](https://www.droidontime.com)
-* [**Telegram Public Chat**](https://t.me/dotos)
-* [**Telegram Channel**](https://t.me/dotOSchannel)
-* [**Facebook Page**](https://www.facebook.com/dotosofficial)
-* [**Twitter**](https://twitter.com/dotosofficial)
-* [**PayPal**](https://www.paypal.com/paypalme/MOHANCM)
+Special thanks to the following projects for their contributions:
 
-
-• For maintainership & to submit patches refer [**HERE**](https://github.com/DotOS/android_vendor_dot/blob/dot11/README.md)
-
-• Submit your All patches through our [**Gerrit Code Review**](https://review.droidontime.com)
-
-• Help us on translation through our [**Crowdin**](https://translations.droidontime.com)
-
-
------------------------------------------------------------------------------
-
-Credits:
-=======
- * [**AOSP**](https://android.googlesource.com)
- * [**LineageOS**](https://github.com/LineageOS)
- * [**DirtyUnicorns**](https://github.com/dirtyunicorns)
- * [**PixelExperience**](https://github.com/PixelExperience)
-
-
-<p align="center">
-<img src="https://github.com/DotOS/resources_drawables/blob/master/DOT5.png?raw=true" > 
-</p>
+- [**AOSP**](https://android.googlesource.com)
+- [**DotOS**](https://github.com/DotOS)
+- [**LineageOS**](https://github.com/LineageOS)
+- [**DirtyUnicorns**](https://github.com/dirtyunicorns)
+- [**PixelExperience**](https://github.com/PixelExperience)

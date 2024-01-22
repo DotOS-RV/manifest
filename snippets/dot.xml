@@ -26,6 +26,10 @@
           fetch="https://gitlab.com/dotosofficial"
           revision="refs/heads/dot11" />
 
+  <remote name="dot-rv"
+          fetch="https://github.com/DotOS-RV"
+          revision="refs/heads/dot11" />
+
   <project path="art" name="android_art" remote="dot" />
   <project path="manifest" name="manifest" remote="dot" />
   <project path="bionic" name="android_bionic" remote="dot" />
