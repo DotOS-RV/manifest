@@ -70,6 +70,7 @@
 
   <!-- External Repos -->
   <project path="external/tinycompress" name="android_external_tinycompress" remote="dot" />
+  <project path="external/tremolo" name="android_external_tremolo" remote="dot-rv" />
   <project path="external/robolectric-shadows" name="android_external_robolectric-shadows" remote="dot" />
   <project path="external/selinux" name="android_external_selinux" remote="dot" />
   <project path="external/asus/stitchimage" name="external_asus_stitchimage" remote="dotos-gitlab" />
@@ -190,6 +191,7 @@
   <project path="system/netd" name="android_system_netd" remote="dot" />
   <project path="system/sepolicy" name="android_system_sepolicy" remote="dot" />
   <project path="system/security" name="android_system_security" remote="dot" />
+  <project path="system/tools/aidl" name="android_system_tools_aidl" groups="pdk" remote="dot-rv" />
   <project path="system/tools/dtbtool" name="android_system_tools_dtbtool" groups="pdk" remote="dot" />
   <project path="system/tools/mkbootimg" name="android_system_tools_mkbootimg" groups="pdk" remote="dot" />
   <project path="system/update_engine" name="android_system_update_engine" remote="dot" />
