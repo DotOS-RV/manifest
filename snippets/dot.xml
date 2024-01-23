@@ -31,12 +31,12 @@
           revision="refs/heads/dot11" />
 
   <project path="art" name="android_art" remote="dot" />
-  <project path="manifest" name="manifest" remote="dot" />
+  <project path="manifest" name="manifest" remote="dot-rv" />
   <project path="bionic" name="android_bionic" remote="dot" />
   <project path="bootable/recovery" name="android_bootable_recovery" remote="dot" />
 
   <!-- Build Repos -->
-  <project path="build/make" name="android_build" groups="pdk" remote="dot" >
+  <project path="build/make" name="android_build" groups="pdk" remote="dot-rv" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -60,7 +60,7 @@
   <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" remote="dot" />
 
   <!-- Dot Repos -->
-  <project path="vendor/dot" name="android_vendor_dot" remote="dot" />
+  <project path="vendor/dot" name="android_vendor_dot" remote="dot-rv" />
   <project path="vendor/support" name="android_vendor_support" remote="dot" />
   <project path="vendor/gms" name="android_vendor_gms" remote="dot-gitlab" />
   <project path="device/dot/sepolicy" name="android_device_dot_sepolicy" remote="dot" />
@@ -77,7 +77,7 @@
   <project path="external/faceunlock" name="external_faceunlock" remote="dotos-gitlab" />
 
   <!-- Frameworks Repos -->
-  <project path="frameworks/av" name="android_frameworks_av" remote="dot" />
+  <project path="frameworks/av" name="android_frameworks_av" remote="dot-rv" />
   <project path="frameworks/base" name="android_frameworks_base" remote="dot" />
   <project path="frameworks/libs/systemui" name="android_frameworks_libs_systemui" remote="dot" />
   <project path="frameworks/native" name="android_frameworks_native" remote="dot" />
@@ -140,7 +140,7 @@
   <!-- Packages -->
   <project path="packages/apps/Bluetooth" name="android_packages_apps_Bluetooth" groups="pdk-fs" remote="dot" />
   <project path="packages/apps/Camera2" name="android_packages_apps_Camera2" groups="pdk-fs" remote="dot" />
-  <project path="packages/apps/Contacts" name="android_packages_apps_Contacts" groups="pdk-fs" remote="dot" />
+  <project path="packages/apps/Contacts" name="android_packages_apps_Contacts" groups="pdk-fs" remote="dot-rv" />
   <project path="packages/apps/DeskClock" name="android_packages_apps_DeskClock" groups="pdk-fs" remote="dot" />
   <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" groups="pdk-fs" remote="dot" />
   <project path="packages/apps/DocumentsUI" name="android_packages_apps_DocumentsUI" groups="pdk-cw-fs,pdk-fs" remote="dot" />
@@ -148,13 +148,14 @@
   <project path="packages/apps/FMRadio" name="android_packages_apps_FMRadio" remote="dot" />
   <project path="packages/apps/Gallery2" name="android_packages_apps_Gallery2" remote="dot" />
   <project path="packages/apps/Jelly" name="android_packages_apps_Jelly" remote="dot" />
+  <project path="packages/apps/KeyChain" name="android_packages_apps_KeyChain" remote="dot-rv" />
   <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" groups="pdk-fs" remote="dot" />
   <project path="packages/apps/ManagedProvisioning" name="android_packages_apps_ManagedProvisioning" groups="pdk-fs" remote="dot" />
   <project path="packages/apps/Messaging" name="android_packages_apps_Messaging" groups="pdk-fs" remote="dot" />
-  <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" groups="pdk-fs" remote="dot" />
+  <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" groups="pdk-fs" remote="dot-rv" />
   <project path="packages/apps/PermissionController" name="android_packages_apps_PermissionController" groups="pdk-fs" remote="dot" />
   <project path="packages/apps/SimpleDeviceConfig" name="android_packages_apps_SimpleDeviceConfig" remote="dot" />
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="dot" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="dot-rv" />
   <project path="packages/apps/SettingsIntelligence" name="android_packages_apps_SettingsIntelligence" remote="dot" />
   <project path="packages/apps/Stk" name="android_packages_apps_Stk" remote="dot" />
   <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="dot" />
@@ -167,8 +168,9 @@
   <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="dot" />
   <project path="packages/apps/FaceUnlockService" name="android_packages_apps_FaceUnlockService" remote="dotos-gitlab" />
   <project path="packages/modules/CaptivePortalLogin" name="android_packages_modules_CaptivePortalLogin" remote="dot" />
+  <project path="packages/providers/ContactsProvider" name="android_packages_providers_ContactsProvider" remote="dot-rv" />
   <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" remote="dot" />
-  <project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider" remote="dot" />
+  <project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider" remote="dot-rv" />
 
   <!-- Prebuilts -->
   <project path="prebuilts/abi-dumps/vndk" name="android_prebuilts_abi-dumps_vndk" remote="dot" />
@@ -183,7 +185,7 @@
   <project path="device/mediatek/sepolicy" name="android_device_mediatek_sepolicy" remote="dot" />
 
   <!-- System Repos -->
-  <project path="system/bt" name="android_system_bt" groups="pdk" remote="dot" />
+  <project path="system/bt" name="android_system_bt" groups="pdk" remote="dot-rv" />
   <project path="system/core" name="android_system_core" remote="dot" />
   <project path="system/netd" name="android_system_netd" remote="dot" />
   <project path="system/sepolicy" name="android_system_sepolicy" remote="dot" />
